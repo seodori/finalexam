@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <!-- JQuery Load -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS Load -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="bg_circle"></div>
+    <div id="bg_circle_2"></div>
+    <!-- 진행 상황 표시 -->
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- 질문 영역 -->
+    <div class="circle one" style="z-index: 0"></div>
+    <div class="circle two" style="z-index: 0"></div>
+    <div id="question-container">
+      <h1 id="question-title">
+        수업시간에 메모한 시험범위를 잃어버렸다! 당신은...
+      </h1>
+      <div class="choices">
+        <div class="choice" data-value="E">
+          <img src="img/e_example.png" alt="Example 1" />
+          <p>학교 홈페이지에서 시험범위를 찾아본다</p>
+        </div>
+        <div class="choice" data-value="I">
+          <img src="img/i_example.png" alt="Example 2" />
+          <p>같이 수업을 듣는 친구들에게 물어본다</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 이전 버튼 -->
+    <div class="button" style="justify-content: flex-start">
+      <button id="next-button" disabled data-action="nextQuestion">
+        이전으로
+        <img
+          src="../img/arrow.png"
+          alt="화살표 아이콘"
+          class="next-button-icon"
+        />
+      </button>
+    </div>
+    <!-- 결과 화면 -->
+    <div id="result-container" style="display: none">
+      <div class="background">
+        <h1 id="result-title"></h1>
+        <img id="result-image" src="" alt="MBTI Image" />
+        <p id="result-description"></p>
+      </div>
+      <div id="result-buttons"></div>
+    </div>
+  </body>
+</html>
