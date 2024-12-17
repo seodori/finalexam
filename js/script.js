@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "늦은 시간,영화 한편만 보고 자려했는데 잠이 안온다. 나는...",
       choices: [
         {
-          text: "그래도 내일 일정이 있으니 억지로라도 자야한다.",
+          text: "내일 일정이 있으니 억지로라도 자야한다.",
           value: "J",
           img: "img/37.png",
         },
